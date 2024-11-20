@@ -14,6 +14,7 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  display: none;
 }
 .start-button {
   position: absolute;
@@ -66,17 +67,20 @@ button {
   cursor: pointer;  
 }
 button:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
-.yes {
+#yes {
   background-color: #4caf50;
   color: white;
 }
-.no {
+#no {
   background-color: #f44336;
   color: white;
 }
 .score {
   font-size: 20px;
   margin-bottom: 20px;
+}
+#timer{
+  align-items: right;
 }

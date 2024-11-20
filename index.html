@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="game-container">
-    <button class="start-button" onclick="startGame()">Start</button>
+  <button class="start-button" onclick="startGame()">Start</button>
+
+  <div class="game-container" id="main">
+    <h2 id="timer"></h2>
     <h1>Color Match Game</h1>
     <div class="score">Score: <span id="score">0</span></div>
     <div class="multiplier">Multiplier: x<span id="multiplier">1</span></div>
@@ -16,12 +18,12 @@
       <div class="meter-fill" id="meter-fill"></div>
     </div>
     <div class="card">
-      <span id="left-card">blue</span>
-      <span id="right-card">yellow</span>
+      <span id="left-card"></span>
+      <span id="right-card"></span>
     </div>
     <div class="buttons">
-      <button class="yes" onclick="handleAnswer(true)">Yes</button>
-      <button class="no" onclick="handleAnswer(false)">No</button>
+      <button id="no" onclick="handleAnswer(false)">No</button>
+      <button id="yes" onclick="handleAnswer(true)">Yes</button>
     </div>
   </div>
   <script src="script.js"></script>
